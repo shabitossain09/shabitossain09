@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO & Description -->
+  <title>Md Shabit Hossain — Ocean Scientist</title>
+  <meta name="description" content="Portfolio of Md Shabit Hossain — Ocean Scientist specialising in observational oceanography, ocean modelling, remote sensing, and marine ecology. SUST, Bangladesh.">
+  <meta name="author" content="Md Shabit Hossain">
+  <meta name="keywords" content="Ocean Scientist, Observational Oceanography, Ocean Modelling, Remote Sensing, Marine Ecology, Climate Change, Bay of Bengal, Bangladesh, SUST">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md Shabit Hossain — Ocean Scientist">
+  <meta property="og:description" content="Early-career ocean scientist. Expertise in observational oceanography, ocean modelling, remote sensing, and marine ecology.">
+  <meta property="og:image" content="assets/SHABIT.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:site_name" content="Md Shabit Hossain Portfolio">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Md Shabit Hossain — Ocean Scientist">
+  <meta name="twitter:description" content="Early-career ocean scientist. RV Polarstern expedition, Bay of Bengal research, SUST Bangladesh.">
+
+  <!-- Theme colour for mobile browsers -->
+  <meta name="theme-color" content="#03264a">
+  <meta name="msapplication-navbutton-color" content="#03264a">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Shabit Hossain">
+
+  <!-- Favicon (optional — add your own assets/favicon.ico) -->
+  <link rel="icon" href="assets/favicon.ico">
+
+  <!-- Preconnect for Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <style>
+/* ============================================================
+   Md Shabit Hossain — Portfolio Stylesheet
+   Font: Roboto (Google Fonts) with Arial fallback
+   Responsive: mobile-first, scales to all screens
+   ============================================================ */
+
+/* ── Reset & Root ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --deep:       #03264a;
+  --mid:        #14518f;
+  --bright:     #2e7ec4;
+  --light:      #a8cbee;
+  --pale:       #e4f0fb;
+  --teal:       #0f7a5e;
+  --teal-pale:  #ddf3ec;
+  --teal-light: #7fd4bc;
+  --ink:        #111820;
+  --ink2:       #374a5c;
+  --muted:      #6b7f90;
+  --rule:       #d1dce6;
+  --bg:         #f4f7fb;
+  --white:      #ffffff;
+  --nav-bg:     #f0f2f5;
+  --sans:       'Roboto', Arial, sans-serif;
+  --radius:     10px;
+  --max-w:      860px;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 14.5px;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+button { font-family: var(--sans); }
+
+/* ── Navigation ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--nav-bg);
+  border-bottom: 1px solid #dde2e8;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.nav-inner::-webkit-scrollbar { display: none; }
+
+.nav-inner a {
+  display: flex;
+  align-items: center;
+  padding: 0 1.3rem;
+  height: 46px;
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-right: 1px solid #dde2e8;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-inner a:first-child { border-left: 1px solid #dde2e8; }
+.nav-inner a:hover { background: #e2e6eb; color: var(--deep); }
+.nav-inner a.active { background: var(--deep); color: #fff; }
+
+/* ── Hero ── */
+.hero-section {
+  background: #fff;
+  padding: 4.5rem 2.6rem 4rem;
+  border-bottom: 1px solid var(--rule);
+}
+.hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  gap: 3.5rem;
+  align-items: flex-start;
+}
+
+/* Portrait */
+.portrait-col {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+}
+.portrait-frame {
+  width: 176px;
+  height: 216px;
+  border: 2px solid #b0bec5;
+  background: #edf1f4;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.portrait-frame img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+/* Social icons */
+.social-row { display: flex; gap: 8px; justify-content: center; }
+.social-btn {
+  width: 33px; height: 33px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px solid #c8d6e2;
+  text-decoration: none; color: var(--ink2); background: #fff;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  flex-shrink: 0;
+}
+.social-btn:hover { background: var(--deep); border-color: var(--deep); color: #fff; }
+.social-btn svg { width: 15px; height: 15px; fill: currentColor; }
+
+.hero-email {
+  font-size: 12px; color: var(--muted);
+  display: flex; align-items: center; gap: 5px;
+  text-decoration: none; transition: color 0.15s;
+}
+.hero-email:hover { color: var(--mid); }
+
+/* Hero text */
+.hero-text { flex: 1; min-width: 0; }
+.hero-name {
+  font-size: clamp(1.85rem, 3.6vw, 2.7rem);
+  font-weight: 700; color: var(--ink);
+  line-height: 1.1; margin-bottom: 0.22rem; letter-spacing: -0.01em;
+}
+.hero-desig {
+  font-size: 12px; font-weight: 500; color: var(--mid);
+  letter-spacing: 0.14em; text-transform: capitalize;
+  margin-bottom: 1.2rem;
+  display: flex; align-items: center; gap: 10px;
+}
+.hero-desig::after {
+  content: ''; flex: 1; height: 1px;
+  background: var(--rule); max-width: 60px;
+}
+.hero-bio {
+  font-size: 13.5px; font-weight: 300; color: var(--ink2);
+  line-height: 1.82; margin-bottom: 1.7rem;
+  border-left: 3px solid var(--bright); padding-left: 1rem;
+  max-width: 500px;
+}
+.ri-label {
+  font-size: 10px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+  font-weight: 500; margin-bottom: 8px;
+}
+.kw-list { display: flex; flex-wrap: wrap; gap: 7px; }
+.kw-tag {
+  font-size: 12px; color: var(--ink); background: #fff;
+  border: 1.5px solid #9aabb8; padding: 5px 13px;
+  font-weight: 400;
+  transition: background 0.14s, color 0.14s, border-color 0.14s;
+  cursor: default;
+}
+.kw-tag:hover { background: var(--deep); color: #fff; border-color: var(--deep); }
+
+/* ── Photo Strip ── */
+.photo-strip-section {
+  background: #e8ecf0;
+  overflow: hidden;
+  border-top: 1px solid #d0d7de;
+  border-bottom: 1px solid #d0d7de;
+}
+.strip-track-wrap { overflow: hidden; padding: 14px 0; }
+.strip-track {
+  display: flex; gap: 10px;
+  width: max-content;
+  animation: scrollLeft 40s linear infinite;
+}
+.strip-track:hover { animation-play-state: paused; }
+
+.strip-slot {
+  width: 210px; height: 140px; border-radius: 7px; overflow: hidden;
+  background: #d4dae0;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; position: relative;
+}
+.strip-slot img { width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; display: block; }
+
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ── Generic Sections ── */
+.section { padding: 3.8rem 2.6rem; }
+.s-white { background: var(--white); }
+.s-tinted { background: var(--bg); }
+.s-dark { background: #edf2f8; }
+.section-inner { max-width: var(--max-w); margin: 0 auto; }
+
+.section-header {
+  display: flex; align-items: baseline; gap: 1rem;
+  margin-bottom: 2.2rem; padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--rule);
+}
+.sec-label {
+  font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--teal); font-weight: 700; white-space: nowrap;
+}
+.sec-title {
+  font-size: 1.5rem; font-weight: 700; color: var(--ink); line-height: 1.2;
+}
+
+/* ── Education Timeline ── */
+.timeline { position: relative; padding-left: 1.9rem; }
+.timeline::before {
+  content: ''; position: absolute; left: 6px; top: 6px; bottom: 6px;
+  width: 1px; background: var(--rule);
+}
+.tl-item { position: relative; margin-bottom: 2rem; }
+.tl-item:last-child { margin-bottom: 0; }
+.tl-dot {
+  position: absolute; left: -1.9rem; top: 6px;
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--mid); border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--mid);
+}
+.tl-year { font-size: 10.5px; font-weight: 700; color: var(--teal); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2px; }
+.tl-deg { font-size: 14.5px; font-weight: 700; color: var(--ink); margin-bottom: 2px; line-height: 1.3; }
+.tl-inst { font-size: 13px; color: var(--mid); margin-bottom: 4px; font-weight: 500; }
+.tl-grade { display: inline-block; font-size: 11px; background: var(--pale); color: var(--mid); padding: 2px 10px; border-radius: 20px; font-weight: 500; margin-bottom: 5px; }
+.tl-detail { font-size: 12.5px; color: var(--muted); line-height: 1.65; font-weight: 300; }
+.tl-detail strong { color: var(--ink2); font-weight: 500; }
+.award-badge {
+  display: inline-flex; align-items: center; gap: 6px; margin-top: 8px;
+  background: linear-gradient(135deg, #fff8e1, #fff3cd);
+  border: 1px solid #f0c040; border-radius: 6px;
+  padding: 6px 12px; font-size: 12.5px; font-weight: 500; color: #7a5000;
+}
+
+/* ── Experience ── */
+.exp-list { display: grid; gap: 13px; }
+.exp-card {
+  background: #fff; border: 1px solid var(--rule);
+  border-radius: var(--radius); padding: 1.35rem 1.55rem;
+  border-left: 4px solid var(--mid);
+}
+.exp-card.teal-b { border-left-color: var(--teal); }
+.exp-card.hidden { display: none; }
+.exp-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.25rem; }
+.exp-role { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.3; }
+.exp-period { font-size: 11px; color: var(--muted); white-space: nowrap; background: var(--bg); padding: 3px 9px; border-radius: 4px; }
+.exp-org { font-size: 12.5px; color: var(--mid); font-weight: 500; margin-bottom: 8px; }
+.exp-bullets { padding-left: 1.1rem; }
+.exp-bullets li { font-size: 13px; color: var(--ink2); line-height: 1.7; margin-bottom: 3px; font-weight: 300; }
+.exp-toggle-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  margin-top: 8px; background: none;
+  border: 1px solid var(--rule); border-radius: 6px;
+  padding: 6px 14px; font-size: 12.5px; font-weight: 500;
+  color: var(--mid); cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.exp-toggle-btn:hover { background: var(--pale); }
+.exp-toggle-btn svg { width: 13px; height: 13px; transition: transform 0.25s; }
+.exp-toggle-btn.open svg { transform: rotate(180deg); }
+
+/* ── Projects ── */
+.proj-list { display: grid; gap: 20px; }
+.proj-card {
+  background: #fff; border: 1px solid var(--rule);
+  border-radius: var(--radius); overflow: hidden;
+  transition: box-shadow 0.18s;
+}
+.proj-card:hover { box-shadow: 0 4px 20px rgba(20,81,143,0.10); }
+.proj-body { padding: 1.4rem 1.5rem; }
+.proj-title { font-size: 15px; font-weight: 700; color: var(--deep); line-height: 1.35; margin-bottom: 0.5rem; }
+.proj-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 0.8rem; }
+.proj-tag { font-size: 11px; background: var(--pale); color: var(--mid); padding: 2px 8px; border-radius: 4px; }
+.proj-abstract {
+  font-size: 13px; color: var(--ink2); line-height: 1.75; font-weight: 300;
+  overflow: hidden;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+}
+.proj-abstract.expanded { display: block; -webkit-line-clamp: unset; }
+.see-more-btn {
+  background: none; border: none; cursor: pointer;
+  font-size: 12.5px; font-weight: 500; color: var(--bright);
+  padding: 5px 0 0; display: inline-flex; align-items: center; gap: 4px;
+  transition: color 0.15s;
+}
+.see-more-btn:hover { color: var(--mid); }
+.see-more-btn svg { width: 13px; height: 13px; transition: transform 0.25s; }
+.see-more-btn.open svg { transform: rotate(180deg); }
+
+.proj-media { border-top: 1px solid var(--rule); background: var(--bg); }
+.proj-media-label { font-size: 10px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; padding: 7px 14px 0; font-weight: 500; }
+.proj-media-inner { display: flex; min-height: 140px; }
+.proj-img-slot {
+  flex: 1; min-height: 140px;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  border-right: 4px solid var(--rule);
+  background: var(--bg);
+}
+.proj-img-slot:last-child { border-right: none; }
+.proj-img-slot img { width: 100%; height: 140px; object-fit: cover; display: block; cursor: zoom-in; }
+
+/* ── Expeditions ── */
+.ef-list { display: grid; gap: 12px; }
+.ef-card {
+  background: var(--deep); border-radius: var(--radius);
+  padding: 1.3rem 1.6rem;
+  display: grid; grid-template-columns: auto 1fr; gap: 1.2rem; align-items: start;
+  transition: transform 0.18s;
+}
+.ef-card:hover { transform: translateX(4px); }
+.ef-badge {
+  background: rgba(46,126,196,0.22); border: 1px solid rgba(46,126,196,0.38);
+  border-radius: 8px; padding: 0.5rem 0.8rem; text-align: center; min-width: 62px;
+}
+.ef-year { font-size: 15px; font-weight: 700; color: var(--light); line-height: 1; }
+.ef-type { font-size: 9px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--teal-light); margin-top: 3px; }
+.ef-content h3 { font-size: 13.5px; font-weight: 700; color: #fff; margin-bottom: 4px; line-height: 1.3; }
+.ef-loc { font-size: 11.5px; color: var(--teal-light); margin-bottom: 6px; font-weight: 500; display: flex; align-items: center; gap: 5px; }
+.ef-loc svg { width: 11px; height: 11px; fill: var(--teal-light); flex-shrink: 0; }
+.ef-desc { font-size: 12.5px; color: rgba(255,255,255,0.60); line-height: 1.65; font-weight: 300; }
+.ef-highlight {
+  display: inline-block; margin-top: 7px; font-size: 11.5px;
+  background: rgba(46,126,196,0.22); border: 1px solid rgba(46,126,196,0.35);
+  color: var(--light); padding: 3px 10px; border-radius: 4px; font-weight: 500;
+}
+
+/* ── Conferences ── */
+.conf-list { display: grid; gap: 11px; }
+.conf-item {
+  background: #fff; border: 1px solid var(--rule);
+  border-left: 3px solid var(--bright); border-radius: 0 8px 8px 0;
+  padding: 1rem 1.3rem;
+  display: grid; grid-template-columns: auto 1fr; gap: 1rem; align-items: start;
+}
+.conf-badge { text-align: center; min-width: 62px; }
+.conf-type-tag {
+  display: inline-block; font-size: 10px; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  padding: 4px 8px; border-radius: 4px; white-space: nowrap;
+}
+.type-poster  { background: #fff3e0; color: #b36200; }
+.type-oral    { background: var(--teal-pale); color: var(--teal); }
+.type-attend  { background: var(--pale); color: var(--mid); }
+.conf-year { font-size: 11px; color: var(--muted); margin-top: 4px; text-align: center; }
+.conf-title { font-size: 13.5px; font-weight: 500; color: var(--ink); line-height: 1.4; margin-bottom: 3px; }
+.conf-event { font-size: 12px; color: var(--muted); font-style: italic; }
+.conf-topic { font-size: 12.5px; color: var(--ink2); margin-top: 4px; font-weight: 300; }
+
+.volunteer-box {
+  margin-top: 1.2rem; padding: 0.9rem 1.2rem;
+  background: var(--pale); border-radius: 8px; border: 1px solid var(--light);
+}
+.volunteer-label { font-size: 10.5px; font-weight: 700; color: var(--mid); letter-spacing: 0.07em; text-transform: uppercase; margin-bottom: 4px; }
+.volunteer-text { font-size: 13px; color: var(--ink2); font-weight: 300; line-height: 1.7; }
+
+/* ── Publications ── */
+.pub-placeholder { font-size: 13.5px; color: var(--muted); font-weight: 300; line-height: 1.8; font-style: italic; }
+
+/* ── Training ── */
+.training-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.tr-item {
+  background: #fff; border: 1px solid var(--rule);
+  border-radius: 8px; padding: 0.85rem 1.05rem;
+  display: flex; gap: 10px; align-items: flex-start;
+}
+.tr-icon-wrap {
+  width: 28px; height: 28px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center; margin-top: 1px;
+}
+.tr-icon-wrap svg { width: 22px; height: 22px; }
+.tr-dual-logo { width: auto; gap: 3px; flex-direction: row; }
+.tr-name { font-size: 13px; font-weight: 500; color: var(--ink); margin-bottom: 1px; line-height: 1.3; }
+.tr-org { font-size: 11.5px; color: var(--muted); }
+
+/* ── Skills ── */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.skill-card { background: #fff; border: 1px solid var(--rule); border-radius: var(--radius); padding: 1.1rem 1.3rem; }
+.skill-card h3 { font-size: 11px; font-weight: 700; color: var(--mid); letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 9px; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.skill-tag { font-size: 12px; background: var(--pale); color: var(--mid); padding: 4px 10px; border-radius: 5px; }
+
+/* ── Contact ── */
+.contact-simple { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 2rem 0; }
+.contact-simple p { font-size: 14px; color: var(--ink2); font-weight: 300; text-align: center; max-width: 400px; line-height: 1.7; }
+.email-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--deep); color: #fff;
+  padding: 13px 28px; border-radius: 8px;
+  font-size: 14.5px; font-weight: 500; text-decoration: none;
+  transition: background 0.18s;
+}
+.email-btn:hover { background: var(--mid); }
+.email-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+
+/* ── Footer ── */
+footer { background: var(--deep); padding: 1.6rem 2.5rem; text-align: center; }
+footer p { font-size: 12px; color: rgba(168,203,238,0.4); }
+footer a { color: var(--light); text-decoration: none; }
+
+/* ══════════════════════════════════════════
+   RESPONSIVE BREAKPOINTS
+══════════════════════════════════════════ */
+
+/* Tablet (≤900px) */
+@media (max-width: 900px) {
+  .hero-inner { gap: 2.5rem; }
+  .portrait-frame { width: 155px; height: 190px; }
+}
+
+/* Large mobile / small tablet (≤720px) */
+@media (max-width: 720px) {
+  .hero-section { padding: 3.5rem 1.6rem 3rem; }
+  .hero-inner { flex-direction: column; align-items: center; gap: 2rem; }
+  .hero-text { text-align: center; width: 100%; }
+  .hero-bio { border-left: none; border-top: 3px solid var(--bright); padding-left: 0; padding-top: 0.8rem; }
+  .hero-desig::after { display: none; }
+  .kw-list { justify-content: center; }
+  .portrait-frame { width: 150px; height: 185px; }
+
+  .nav-inner { justify-content: flex-start; }
+  .nav-inner a { padding: 0 1rem; font-size: 11px; }
+
+  .section { padding: 3rem 1.5rem; }
+  .sec-title { font-size: 1.35rem; }
+
+  .ef-card { grid-template-columns: 1fr; }
+  .ef-badge { display: flex; gap: 8px; align-items: center; min-width: unset; width: fit-content; }
+  .conf-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  .proj-media-inner { flex-direction: column; }
+  .proj-img-slot { border-right: none; border-bottom: 1px dashed var(--rule); min-height: 120px; }
+  .proj-img-slot:last-child { border-bottom: none; }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .hero-section { padding: 2.5rem 1.2rem 2.5rem; }
+  .section { padding: 2.5rem 1.2rem; }
+  .hero-name { font-size: 1.7rem; }
+  .portrait-frame { width: 136px; height: 168px; }
+  .social-btn { width: 30px; height: 30px; }
+  .social-btn svg { width: 13px; height: 13px; }
+  .strip-slot { width: 170px; height: 114px; }
+  nav { position: sticky; top: 0; }
+  .nav-inner a { padding: 0 0.85rem; font-size: 10.5px; height: 42px; }
+  footer { padding: 1.4rem 1.2rem; }
+}
+
+/* Very small screens (≤360px) */
+@media (max-width: 360px) {
+  .hero-name { font-size: 1.5rem; }
+  .portrait-frame { width: 120px; height: 148px; }
+  .kw-tag { font-size: 11px; padding: 4px 10px; }
+}
+
+/* Print styles */
+@media print {
+  nav, .photo-strip-section, .exp-toggle-btn, .see-more-btn,
+  .proj-toggle-btn, .conf-toggle-btn,
+  .proj-media, footer { display: none !important; }
+  .exp-card.hidden, .proj-card.hidden, .conf-item.hidden { display: block !important; }
+  .proj-abstract { display: block !important; -webkit-line-clamp: unset !important; }
+  body { font-size: 11pt; background: #fff; color: #000; }
+  .section { padding: 1rem 0; }
+  .ef-card { background: #eee; }
+}
+
+/* ============================================================
+   Lightbox styles — appended to style.css
+   ============================================================ */
+
+/* Lightbox overlay */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+#lightbox.open {
+  display: flex;
+}
+
+.lb-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.lb-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min(92vw, 1100px);
+  max-height: 92vh;
+  padding: 0;
+  animation: lbFadeIn 0.22s ease;
+}
+
+@keyframes lbFadeIn {
+  from { opacity: 0; transform: scale(0.96); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.lb-img {
+  display: block;
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.6);
+  user-select: none;
+}
+
+.lb-caption {
+  margin-top: 12px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.65);
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.lb-close {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.lb-close:hover { background: rgba(255,255,255,0.24); }
+.lb-close:focus { outline: 2px solid rgba(255,255,255,0.5); outline-offset: 2px; }
+
+/* Clickable photo cursor hints */
+.strip-slot.filled { cursor: zoom-in; }
+.proj-img-slot.filled { cursor: zoom-in; }
+
+@media (max-width: 480px) {
+  .lb-close { top: -40px; width: 32px; height: 32px; font-size: 14px; }
+  .lb-caption { font-size: 12px; }
+}
+
+.proj-card.hidden { display: none; }
+.conf-item.hidden { display: none; }
+.proj-toggle-btn, .conf-toggle-btn {
+  display: inline-flex; align-items: center; gap: 5px;
+  margin-top: 16px; background: none;
+  border: 1px solid var(--rule); border-radius: 6px;
+  padding: 6px 14px; font-size: 12.5px; font-weight: 500;
+  color: var(--mid); cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.proj-toggle-btn:hover, .conf-toggle-btn:hover { background: var(--pale); }
+.proj-toggle-btn svg, .conf-toggle-btn svg { width: 13px; height: 13px; transition: transform 0.25s; }
+.proj-toggle-btn.open svg, .conf-toggle-btn.open svg { transform: rotate(180deg); }
+  </style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#expeditions">Field Work</a>
+    <a href="#conferences">Conferences</a>
+    <a href="#publications">Publications</a>
+    <a href="#training">Training</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero-section">
+  <div class="hero-inner">
+
+    <!-- LEFT: portrait + socials + email -->
+    <div class="portrait-col">
+      <!--
+        PORTRAIT PHOTO
+        Replace assets/SHABIT.png with your photo.
+        Recommended size: ~440 x 540px (portrait orientation), JPG or PNG.
+      -->
+      <div class="portrait-frame">
+        <img src="ASSET/SHABIT.png" alt="Md Shabit Hossain" class="js-lightbox">
+      </div>
+
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/shabitossain/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/shabitossain09" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.facebook.com/shabitossain/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Facebook" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/shabitossain/" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+
+      <a href="mailto:shabit.ocg@gmail.com" class="hero-email" aria-label="Email Shabit">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        shabit.ocg@gmail.com
+      </a>
+    </div>
+
+    <!-- RIGHT: name / role / bio / keywords -->
+    <div class="hero-text">
+      <h1 class="hero-name">Md Shabit Hossain</h1>
+      <div class="hero-desig">OCEANOGRAPHY (MSc)</div>
+      <p class="hero-bio">An early-career ocean scientist with expertise in observational oceanography, ocean modelling, remote sensing, and marine ecology. Experienced in shipboard research aboard RV Polarstern, coastal field work across Bangladesh, and community-based coastal monitoring. Passionate about ocean–atmosphere interaction and climate change. Currently seeking a PhD opportunity to advance my research in ocean and climate science.</p>
+      <div class="ri-label">Research interests</div>
+      <div class="kw-list">
+        <span class="kw-tag">Observational Oceanography</span>
+        <span class="kw-tag">Ocean Modelling</span>
+        <span class="kw-tag">Climate Model</span>
+        <span class="kw-tag">Remote Sensing</span>
+        <span class="kw-tag">Marine Ecology</span>
+        <span class="kw-tag"> Coastal Monitoring</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ PHOTO STRIP ══ -->
+<!--
+  PHOTO STRIP — scrolling field/lab/expedition photos.
+  Add as many <div class="strip-slot"><img ...></div> items as you like below.
+  The track is duplicated once (two identical blocks back to back) so the
+  CSS animation loops seamlessly — if you add/remove photos, update BOTH
+  copies (Block A and Block B) to keep the same set of images.
+  Recommended image size: ~600 x 400px (3:2 ratio), JPG.
+-->
+<div class="photo-strip-section" aria-label="Photo gallery strip">
+  <div class="strip-track-wrap">
+    <div class="strip-track">
+
+      <!-- ===== Block A ===== -->
+      <div class="strip-slot"><img src="ASSET/6.JPG" alt="Field photo 1" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/7.JPG" alt="Field photo 2" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/4.JPG" alt="Field photo 3" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/11.JPEG" alt="Field photo 4" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/2.JPG"  alt="Field photo 5" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/9.JPEG" alt="Field photo 6" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/5.JPG" alt="Field photo 7" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/1.JPG" alt="Field photo 8" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/3.JPG" alt="Field photo 9" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/13.JPEG" alt="Field photo 10" class="js-lightbox"></div>
+     
+
+      <!-- ===== Block B (duplicate of Block A, for seamless loop) ===== -->
+       <div class="strip-slot"><img src="ASSET/6.JPG" alt="Field photo 1" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/7.JPG" alt="Field photo 2" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/4.JPG" alt="Field photo 3" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/11.JPEG" alt="Field photo 4" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/2.JPG"  alt="Field photo 5" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/9.JPEG" alt="Field photo 6" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/5.JPG" alt="Field photo 7" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/1.JPG" alt="Field photo 8" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/3.JPG" alt="Field photo 9" class="js-lightbox"></div>
+      <div class="strip-slot"><img src="ASSET/13.JPEG" alt="Field photo 10" class="js-lightbox"></div>
+     
+    </div>
+  </div>
+</div>
+
+<!-- ══ EDUCATION ══ -->
+<section class="section s-white" id="education">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Academic Background</span>
+      <h2 class="sec-title">Education</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">February 2024 – January 2026</div>
+        <div class="tl-deg">Master of Science in Oceanography</div>
+        <div class="tl-inst">Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</div>
+        <span class="tl-grade">GPA: 3.90 / 4.00</span>
+        <div class="tl-detail"><strong>Thesis:</strong> Variability of physicochemical parameters and heavy metal concentrations in surface waters along the southern coast of Bangladesh.</div>
+        <div class="award-badge"><span aria-hidden="true">🏅</span> National Science and Technology (NST) Fellowship 2024–2025</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-year">January 2019 – December 2023</div>
+        <div class="tl-deg">Bachelor of Science in Oceanography</div>
+        <div class="tl-inst">Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</div>
+        <span class="tl-grade">GPA: 3.66 / 4.00</span>
+        <div class="tl-detail"><strong>Key modules:</strong> Climate &amp; Atmosphere · Remote Sensing &amp; Satellite Oceanography · Physical Oceanography · Ocean Geophysics · Ocean Modelling · GIS Technology · Marine Ecology · Marine Ecosystem &amp; Climate Change.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EXPERIENCE ══ -->
+<section class="section s-tinted" id="experience">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Professional Background</span>
+      <h2 class="sec-title">Experience</h2>
+    </div>
+    <div class="exp-list">
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-role">Ocean Trainee — Oceanographic Expedition</div>
+          <span class="exp-period">Nov – Dec 2025</span>
+        </div>
+        <div class="exp-org">Alfred Wegener Institute (AWI) · RV Polarstern (PS151) · North–South Atlantic Transect · Bremerhaven, Germany</div>
+        <ul class="exp-bullets">
+          <li>Performed shipboard oceanographic and meteorological observations (CTD rosette, XBTs, phytoplankton nets, atmospheric radiosondes).</li>
+          <li>Conducted laboratory analysis of nutrients, dissolved gases and phytoplankton, and supported the long-term NoSoAT data collection and processing.</li>
+          <li>Research Project: Integrated characterization of the Atlantic Ocean across physical and biogeochemical gradients through teaching and capacity building.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <div class="exp-role">Research Assistant</div>
+          <span class="exp-period">Oct 2024 – Jan 2026</span>
+        </div>
+        <div class="exp-org">Shahjalal University of Science and Technology (SUST), Bangladesh · Supervisor: Dr. Subrata Sarker</div>
+        <ul class="exp-bullets">
+          <li>Assisted in field data collection for oceanographic variables (temperature profiles, salinity, dissolved oxygen) and marine biodiversity.</li>
+          <li>Trained local fishers and students on the C4CEM mobile app for community-based coastal monitoring.</li>
+          <li>Organised stakeholder workshops and led outreach activities.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card teal-b hidden" id="exp-extra-1">
+        <div class="exp-header">
+          <div class="exp-role">Educator — Ocean Literacy</div>
+          <span class="exp-period">2025 – Present</span>
+        </div>
+        <div class="exp-org">Sea for Yourself — Global Ocean Literacy Platform · Trevor Platt Science Foundation</div>
+        <ul class="exp-bullets">
+          <li>Trained coastal communities on ocean literacy concepts.</li>
+          <li>Communicated scientific outcomes through infographics, data visualisations, and outreach materials.</li>
+        </ul>
+      </div>
+
+      <div class="exp-card teal-b hidden" id="exp-extra-2">
+        <div class="exp-header">
+          <div class="exp-role">General Secretary</div>
+          <span class="exp-period">2023 – 2024</span>
+        </div>
+        <div class="exp-org">Oceanography Society SUST, Bangladesh</div>
+        <ul class="exp-bullets">
+          <li>Represented the department in academic, outreach, and student engagement activities.</li>
+          <li>Mentored prospective students and facilitated communication between students and faculty.</li>
+        </ul>
+      </div>
+
+    </div>
+    <button class="exp-toggle-btn" id="exp-toggle" aria-expanded="false">
+      Show more
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ══ PROJECTS ══ -->
+<!--
+  PROJECTS
+  Each project card has a media row below the abstract for graphs/posters/maps.
+  Replace assets/projects/projN_graph.jpg etc. with your own images.
+  Recommended image size: ~500 x 350px (landscape), JPG/PNG.
+-->
+<section class="section s-white" id="projects">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Research Portfolio</span>
+      <h2 class="sec-title">Projects</h2>
+    </div>
+    <div class="proj-list">
+
+      <!-- Project 1 -->
+      <div class="proj-card">
+        <div class="proj-body">
+          <h3 class="proj-title">Long-term Transformation of Sea Surface Temperature, Salinity, and Chlorophyll-a in the Bay of Bengal under Climate Change</h3>
+          <div class="proj-tags">
+            <span class="proj-tag">Remote Sensing</span>
+            <span class="proj-tag">Climate Change</span>
+            <span class="proj-tag">Bay of Bengal</span>
+            <span class="proj-tag">ORAS5</span>
+            <span class="proj-tag">MODIS/Sentinel</span>
+          </div>
+          <div class="proj-abstract">The Bay of Bengal (BoB) stands out as highly vulnerable to climate change due to its geographical location, dynamic regional climate variability, and oceanographic processes. This study aims to examine the long-term (2003–2025) changes of Sea Surface Temperature (SST), Sea Surface Salinity (SSS), and Chlorophyll-a (Chl-a) in the Bay of Bengal through a comprehensive analysis of the high-resolution ECMWF Ocean Reanalysis System 5 (ORAS5) dataset and multi-satellite observations. A significant increasing trend in SST at a rate of 0.0163 °C per year was observed, while SSS showed a gradual decline of −0.0098 PSU per year throughout the years of the study period. The decline in salinity was especially noticeable near the Bangladesh coast because of freshwater inflows from the Ganges–Brahmaputra–Meghna (GBM) river system. Interannual variation in chlorophyll-a (Chl-a) concentration was observed to be significant and associated with the El Niño-Southern Oscillation (ENSO). High Chl-a concentrations were observed during La Niña years (2008 &amp; 2011), whereas low Chl-a concentrations occurred during strong El Niño years (2010 &amp; 2016), except 2024, which was very high in an El Niño condition. The long-term analysis of Chl-a showed a notable decline in surface productivity at a rate of −0.0268 mg m⁻³ per year until 2023, followed by a positive trend between 2024 and 2025. Our findings emphasize a recent shift in productivity and contribute to better understanding of the influence of physical oceanographic processes on biological variability in the Bay of Bengal.</div>
+          <button class="see-more-btn" aria-expanded="false">
+            See more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="proj-media">
+          <div class="proj-media-label">Graphs / Posters</div>
+          <div class="proj-media-inner">
+            <div class="proj-img-slot"><img src="ASSET/SST1.PNG"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/SST2.PNG"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/SS1.PNG"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/SS2.PNG"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/CHL1.PNG"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/CHL2.PNG" class="js-lightbox"></div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card">
+        <div class="proj-body">
+          <h3 class="proj-title">Seasonal and Spatial Variability of Physicochemical Parameters and Heavy Metals in Coastal Surface Water of Bangladesh</h3>
+          <div class="proj-tags">
+            <span class="proj-tag">Water Quality</span>
+            <span class="proj-tag">Heavy Metals</span>
+            <span class="proj-tag">ICP-MS</span>
+            <span class="proj-tag">MSc Thesis</span>
+            <span class="proj-tag">Field Work</span>
+          </div>
+          <div class="proj-abstract">Surface water samples were collected from thirty-nine sampling locations along the coast of Bangladesh during pre-monsoon and post-monsoon periods. Five physicochemical parameters (Temperature, pH, DO, Salinity, Turbidity) were measured directly in-situ and ten heavy metals (As, Zn, Pb, Cd, Ni, Mn, Fe, Cr, Cu, Ag) were analyzed using Inductively Coupled Plasma-mass Spectrometry (ICP-MS) to determine the water quality in terms of the Heavy Metal Pollution Index (HPI). The ranges for the physicochemical parameters were 26–30 °C for temperature, 5–33 ppt for salinity, 3–9 mg/L for DO, 6.5–8.8 for pH, and 5–340 NTU for turbidity, while the metals (mg/L) ranged: 0.0002–0.0024 for As, 0.003–0.457 for Zn, 0.0002–0.0085 for Pb, 0.0001–0.0083 for Cd, 0.0004–0.0094 for Ni, 0.003–0.085 for Mn, 0.019–4.56 for Fe, 0.0001–0.0374 for Cr, 0.0003–0.78 for Cu, and 0.0001–4.147 for Ag. Multivariate statistical analysis suggested that high concentrations of heavy metals primarily originated from diverse human activities, while HPI indicated that approximately 80% of the sampling stations exhibited moderate to extreme contamination levels, causing seawater to be unsuitable for mariculture, aquatic ecosystem protection, and irrigation.</div>
+          <button class="see-more-btn" aria-expanded="false">
+            See more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="proj-media">
+          <div class="proj-media-label">Graphs / Posters</div>
+          <div class="proj-media-inner">
+             <div class="proj-img-slot"><img src="ASSET/Study area-01.jpg"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/Station hpi final-01.jpg"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/Rplot corHM.png"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/Rplotcorr.png"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/PCA_biplot.jpg"  class="js-lightbox"></div>
+        
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-card">
+        <div class="proj-body">
+          <h3 class="proj-title">Seaweed Habitat Suitability Mapping using R</h3>
+          <div class="proj-tags">
+            <span class="proj-tag">GAM</span>
+            <span class="proj-tag">R</span>
+            <span class="proj-tag">Habitat Suitability</span>
+            <span class="proj-tag">Bay of Bengal</span>
+            <span class="proj-tag">Marine Ecology</span>
+          </div>
+          <div class="proj-abstract">Analyzed environmental data using the Generalized Additive Model (GAM) in R to identify suitable areas for seaweed growth in the Bay of Bengal. Environmental predictors including sea surface temperature, salinity, light availability, and bathymetry were integrated to model and map spatial suitability zones for seaweed cultivation, supporting sustainable mariculture development along the Bangladesh coast.</div>
+          <button class="see-more-btn" aria-expanded="false">
+            See more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="proj-media">
+          <div class="proj-media-label">Graphs / Posters</div>
+          <div class="proj-media-inner">
+           <div class="proj-img-slot"><img src="ASSET/SF1.jpg"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/AUC.jpg"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/CorplotF.jpg"  class="js-lightbox"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="proj-card">
+        <div class="proj-body">
+          <h3 class="proj-title">Microplastics Pollution in Nijhum Dwip Marine Protected Area and Vicinity: A Case Study from Bangladesh</h3>
+          <div class="proj-tags">
+            <span class="proj-tag">Microplastics</span>
+            <span class="proj-tag">ATR-FTIR</span>
+            <span class="proj-tag">MPA</span>
+            <span class="proj-tag">Ecological Risk</span>
+            <span class="proj-tag">Marine Pollution</span>
+          </div>
+          <div class="proj-abstract">Globally, microplastic (MP) pollution is a growing threat to coastal marine environments. We investigated MPs pollution of water and sediment within and adjacent to the Nijhum Dwip Marine Protected Area (MPA) of Bangladesh. A wooden quadrat (50 cm × 50 cm) and a 200-μm plankton net were used for sample collection. For extracting and identifying MPs, microscopes and ATR-FTIR were used for shape, type, color, size, and polymer type. The mean abundance of water and sediment MPs was 30.34 ± 5.92 items/200 gm and 107 ± 19.41 items/m³, respectively. Filament-shaped and fibre-type MPs dominated both sediment (70.88%) and water (74.96%). Sizes ranging from 0.3 to 1 mm and white/transparent color MPs scored the highest proportions. Polyethylene (PE) was the most abundant polymer in water (28.99%), and nylon was the most abundant in sediment (28.18%). Ecological risk assessment (CFI, PLI, NPI, PHI, Er, and RI) indicated moderate to high levels of pollution and varying degrees of risks.</div>
+          <button class="see-more-btn" aria-expanded="false">
+            See more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="proj-media">
+          <div class="proj-media-label">Graphs / Posters</div>
+          <div class="proj-media-inner">
+            <div class="proj-img-slot"><img src="ASSET/fig3.png"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/1MPs.png"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/FTIR and PIE CHART.jpg"  class="js-lightbox"></div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="proj-card hidden proj-extra">
+        <div class="proj-body">
+          <h3 class="proj-title">Geospatial Analysis of Shoreline Dynamics of Major Islands in the Meghna River Estuary, Bangladesh</h3>
+          <div class="proj-tags">
+            <span class="proj-tag">ArcGIS</span>
+            <span class="proj-tag">DSAS</span>
+            <span class="proj-tag">Shoreline Change</span>
+            <span class="proj-tag">Remote Sensing</span>
+            <span class="proj-tag">Coastal Management</span>
+          </div>
+          <div class="proj-abstract">The analysis of shoreline changes in Manpura, Nijhum Dwip, and Hatiya from 1991 to 2024 highlights distinct trends of erosion and accretion across these islands. Manpura experiences the highest erosion, with 88.31% of its transects showing a mean shoreline change of −11.5 m. In contrast, Nijhum Dwip demonstrates considerable accretion, with 65.98% of transects showing a mean gain of 14.77 m. While Hatiya is mostly affected by erosion, it also shows extensive accretion in the southeastern part of the region. The rate of shoreline changes was determined using DSAS version 5.0, an extension of ArcGIS 10.7 that establishes a baseline, creates orthogonal transects at user-specified intervals along the coast, and calculates rates of change (endpoint rate, linear regression, etc.). The outcome of this analysis might be useful for coastal management and development protection of these islands.</div>
+          <button class="see-more-btn" aria-expanded="false">
+            See more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="proj-media">
+          <div class="proj-media-label">Graphs / Posters</div>
+          <div class="proj-media-inner">
+            <div class="proj-img-slot"><img src="ASSET/map1.jpg"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/Lineplot.jpg"  class="js-lightbox"></div>
+            <div class="proj-img-slot"><img src="ASSET/STUDY.jpg"  class="js-lightbox"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <button class="proj-toggle-btn" id="proj-toggle" aria-expanded="false">
+      Show more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- ══ EXPEDITIONS ══ -->
+<section class="section s-dark" id="expeditions">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">In the Field</span>
+      <h2 class="sec-title">Expeditions &amp; field work</h2>
+    </div>
+    <div class="ef-list">
+      <div class="ef-card">
+        <div class="ef-badge"><div class="ef-year">2025</div><div class="ef-type">Expedition</div></div>
+        <div class="ef-content">
+          <h3>North–South Atlantic Transect — RV Polarstern (PS151)</h3>
+          <div class="ef-loc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            North to South Atlantic Ocean — Bremerhaven, Germany to Walvis Bay, Namibia
+          </div>
+          <div class="ef-desc">Completed a 30-day research expedition aboard RV Polarstern. Contributed to shipboard oceanographic and meteorological observations including CTD rosette casts, XBTs, phytoplankton nets, and atmospheric radiosondes. Laboratory analysis of nutrients, dissolved gases, and phytoplankton as part of the NoSoAT long-term monitoring initiative.</div>
+          <span class="ef-highlight">⏱ Duration: 1 month</span>
+        </div>
+      </div>
+      <div class="ef-card">
+        <div class="ef-badge"><div class="ef-year">2019–25</div><div class="ef-type">Field Work</div></div>
+        <div class="ef-content">
+          <h3>Coastal Oceanographic Monitoring — Bangladesh</h3>
+          <div class="ef-loc">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Bay of Bengal, Bangladesh
+          </div>
+          <div class="ef-desc">As part of my research team, I participated in 11 field trips along the coast of Bangladesh to collect oceanographic in-situ data. Activities included water sampling, CTD profiling, salinity and dissolved oxygen measurements, and marine biodiversity surveys across multiple coastal stations.</div>
+          <span class="ef-highlight">📍 11 Field Trips · Bay of Bengal Coast</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONFERENCES ══ -->
+<section class="section s-white" id="conferences">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Scholarly Engagement</span>
+      <h2 class="sec-title">Conferences &amp; presentations</h2>
+    </div>
+    <div class="conf-list">
+      <div class="conf-item">
+        <div class="conf-badge"><span class="conf-type-tag type-poster">Poster</span><div class="conf-year">2026</div></div>
+        <div>
+          <div class="conf-title">International Symposium on Coast, Climate and Community (ISCCC 2026)</div>
+          <div class="conf-event">Bangladesh, 2026</div>
+          <div class="conf-topic">Long-term Transformation of Sea Surface Temperature, Salinity, and Chlorophyll-a in the Bay of Bengal under Climate Change.</div>
+        </div>
+      </div>
+      <div class="conf-item">
+        <div class="conf-badge"><span class="conf-type-tag type-poster">Poster</span><div class="conf-year">2025</div></div>
+        <div>
+          <div class="conf-title">International Conference on MSP for Advancing Sustainable Blue Growth</div>
+          <div class="conf-event">Bangladesh, 2025</div>
+          <div class="conf-topic">Site Suitability Analysis for Sea Cucumber Mariculture in the Coastal Area of Bangladesh.</div>
+        </div>
+      </div>
+      <div class="conf-item">
+        <div class="conf-badge"><span class="conf-type-tag type-oral">Oral</span><div class="conf-year">2025</div></div>
+        <div>
+          <div class="conf-title">10th International Conference on Water and Flood Management (ICWFM 2025)</div>
+          <div class="conf-event">Bangladesh, 2025</div>
+          <div class="conf-topic">Geospatial Analysis of Shoreline Dynamics of Major Islands in Bangladesh Using ArcGIS.</div>
+        </div>
+      </div>
+      <div class="conf-item hidden conf-extra">
+        <div class="conf-badge"><span class="conf-type-tag type-attend">Attendee</span><div class="conf-year">2023</div></div>
+        <div>
+          <div class="conf-title">International Symposium on Marine Resource Management 2023</div>
+          <div class="conf-event">Bangladesh, 2023</div>
+        </div>
+      </div>
+    </div>
+    <button class="conf-toggle-btn" id="conf-toggle" aria-expanded="false">
+      Show more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="volunteer-box">
+      <div class="volunteer-label">Volunteer Organiser</div>
+      <div class="volunteer-text">Designed logos, promotional materials, and abstract books for ISCCC 2026 and the MSP Sustainable Blue Growth 2025 Conference.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PUBLICATIONS ══ -->
+<section class="section s-tinted" id="publications">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Scholarly Output</span>
+      <h2 class="sec-title">Publications</h2>
+    </div>
+    <p class="pub-placeholder">Peer-reviewed publications will be listed here as they are submitted or accepted.</p>
+  </div>
+</section>
+
+<!-- ══ TRAINING ══ -->
+<section class="section s-white" id="training">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Certifications</span>
+      <h2 class="sec-title">Training &amp; certifications</h2>
+    </div>
+    <div class="training-grid">
+
+      <div class="tr-item">
+        <div class="tr-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#14518f" stroke-width="1.8" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div>
+          <div class="tr-name">Statistical Analysis of Oceanographic Data</div>
+          <div class="tr-org">International Training · NF-POGO affiliated</div>
+        </div>
+      </div>
+
+      <div class="tr-item">
+        <div class="tr-icon-wrap tr-dual-logo">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#3776AB" d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.894S0 5.789 0 11.969c0 6.18 3.403 5.96 3.403 5.96h2.031v-2.867s-.109-3.402 3.35-3.402h5.766s3.24.052 3.24-3.131V3.208S18.322 0 11.914 0zm-3.2 1.853a1.046 1.046 0 110 2.092 1.046 1.046 0 010-2.092z"/><path fill="#FFD43B" d="M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752h-5.814v-.826h8.127S24 18.211 24 12.031c0-6.18-3.403-5.96-3.403-5.96h-2.031v2.867s.109 3.402-3.35 3.402H9.45s-3.24-.052-3.24 3.131v5.321S5.678 24 12.086 24zm3.2-1.853a1.046 1.046 0 110-2.092 1.046 1.046 0 010 2.092z"/></svg>
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#276DC3"/><path fill="#fff" d="M6 17V7h5.5c2.5 0 4 1.2 4 3.1 0 1.5-.9 2.5-2.2 2.9L16 17h-2.4l-2.5-3.7H8v3.7H6zm2-5.3h3.3c1.3 0 2.1-.6 2.1-1.6 0-1-.8-1.6-2.1-1.6H8v3.2z"/></svg>
+        </div>
+        <div>
+          <div class="tr-name">Data Analysis with Python and R</div>
+          <div class="tr-org">Smart Leadership Academy · Enhancing Digital Government &amp; Economy Project, Bangladesh</div>
+        </div>
+      </div>
+
+      <div class="tr-item">
+        <div class="tr-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0f7a5e" stroke-width="1.8" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 8l3 3 2-2 3 3"/></svg>
+        </div>
+        <div>
+          <div class="tr-name">Numerical Model &amp; AI for Ocean Science (NMAI4OS)</div>
+          <div class="tr-org">National Oceanographic and Maritime Institute (NOAMI), Bangladesh</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ SKILLS ══ -->
+<section class="section s-tinted" id="skills">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Technical Expertise</span>
+      <h2 class="sec-title">Skills &amp; tools</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Computational &amp; Analytical</h3>
+        <div class="skill-tags"><span class="skill-tag">R</span><span class="skill-tag">Python</span><span class="skill-tag">MATLAB</span><span class="skill-tag">FlowJo</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>GIS &amp; Remote Sensing</h3>
+        <div class="skill-tags"><span class="skill-tag">ArcGIS</span><span class="skill-tag">QGIS</span><span class="skill-tag">Ocean Data View (ODV)</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Oceanographic Instruments</h3>
+        <div class="skill-tags"><span class="skill-tag">CTD Rosette</span><span class="skill-tag">XBT</span><span class="skill-tag">BBE Fluoroprobe</span><span class="skill-tag">Flow Cytometry</span></div>
+      </div>
+      <div class="skill-card">
+        <h3>Scientific Graphics &amp; Design</h3>
+        <div class="skill-tags"><span class="skill-tag">Adobe Illustrator</span><span class="skill-tag">Affinity Publisher</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="section s-white" id="contact">
+  <div class="section-inner">
+    <div class="section-header">
+      <span class="sec-label">Get in Touch</span>
+      <h2 class="sec-title">Contact</h2>
+    </div>
+    <div class="contact-simple">
+      <p>Have a question or opportunity? Get in touch.</p>
+      <a href="mailto:shabit.ocg@gmail.com" class="email-btn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        shabit.ocg@gmail.com
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Md Shabit Hossain · Ocean Scientist · Bangladesh · <a href="#main-nav">Back to top ↑</a></p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* ── Experience toggle (show more / show less) ── */
+  const expToggleBtn = document.getElementById('exp-toggle');
+  if (expToggleBtn) {
+    let expOpen = false;
+    expToggleBtn.addEventListener('click', function () {
+      expOpen = !expOpen;
+      ['exp-extra-1', 'exp-extra-2'].forEach(function (id) {
+        const el = document.getElementById(id);
+        if (el) el.classList.toggle('hidden', !expOpen);
+      });
+      expToggleBtn.classList.toggle('open', expOpen);
+      expToggleBtn.setAttribute('aria-expanded', expOpen.toString());
+      expToggleBtn.innerHTML = expOpen
+        ? 'Show less <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>'
+        : 'Show more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>';
+    });
+  }
+
+  /* ── Generic "show more" toggle for a group of hidden items ── */
+  function setupGroupToggle(btnId, itemSelector) {
+    const btn = document.getElementById(btnId);
+    if (!btn) return;
+    let open = false;
+    btn.addEventListener('click', function () {
+      open = !open;
+      document.querySelectorAll(itemSelector).forEach(function (el) {
+        el.classList.toggle('hidden', !open);
+      });
+      btn.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open.toString());
+      btn.innerHTML = open
+        ? 'Show less <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>'
+        : 'Show more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>';
+    });
+  }
+  setupGroupToggle('proj-toggle', '.proj-extra');
+  setupGroupToggle('conf-toggle', '.conf-extra');
+
+  /* ── Project abstract "See more / See less" toggles ── */
+  document.querySelectorAll('.proj-card').forEach(function (card) {
+    const abs = card.querySelector('.proj-abstract');
+    const btn = card.querySelector('.see-more-btn');
+    if (!abs || !btn) return;
+    btn.addEventListener('click', function () {
+      const isOpen = abs.classList.contains('expanded');
+      abs.classList.toggle('expanded', !isOpen);
+      btn.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', (!isOpen).toString());
+      btn.innerHTML = isOpen
+        ? 'See more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>'
+        : 'See less <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>';
+    });
+  });
+
+  /* ══════════════════════════════════════════
+     LIGHTBOX — click any image (.js-lightbox) to view full screen
+  ══════════════════════════════════════════ */
+  const lb = document.createElement('div');
+  lb.id = 'lightbox';
+  lb.setAttribute('role', 'dialog');
+  lb.setAttribute('aria-modal', 'true');
+  lb.setAttribute('aria-label', 'Image viewer');
+  lb.innerHTML =
+    '<div class="lb-backdrop"></div>' +
+    '<div class="lb-content">' +
+      '<button class="lb-close" aria-label="Close image viewer">✕</button>' +
+      '<img class="lb-img" id="lb-img" alt="">' +
+      '<div class="lb-caption" id="lb-caption"></div>' +
+    '</div>';
+  document.body.appendChild(lb);
+
+  const lbBackdrop = lb.querySelector('.lb-backdrop');
+  const lbClose    = lb.querySelector('.lb-close');
+  const lbImg      = lb.querySelector('#lb-img');
+  const lbCaption  = lb.querySelector('#lb-caption');
+
+  function openLightbox(src, caption) {
+    lbImg.src = src;
+    lbCaption.textContent = caption || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbBackdrop.addEventListener('click', closeLightbox);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
+  });
+
+  // Attach click handler to every image marked with class "js-lightbox"
+  document.querySelectorAll('img.js-lightbox').forEach(function (img) {
+    img.addEventListener('click', function () {
+      openLightbox(img.src, img.alt || '');
+    });
+  });
+
+  /* ── Nav active highlight on scroll ── */
+  const allSections = document.querySelectorAll('section[id]');
+  const navLinks    = document.querySelectorAll('.nav-inner a');
+
+  function updateNav() {
+    let current = '';
+    allSections.forEach(function (s) {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navLinks.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }
+
+  window.addEventListener('scroll', updateNav, { passive: true });
+  updateNav();
+
+});
+</script>
+</body>
+</html>
